@@ -1,4 +1,5 @@
 /*
+
  *    Copyright (c) The League of Amazing Programmers 2013-2017
  *    Level 1
  */
@@ -21,7 +22,7 @@ public class PhotoQuiz {
 		quizWindow.setVisible(true);
                 quizWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);   // This will make sure the program exits when you close the window
 
-		// 1. find an image on the internet, and put its URL in a String variable (from your browser, right click on the image, and select “Copy Image Address”)
+		// 1. find an image on the internet, and put its URL in a String variable (from your browser, right click on the image, and select â€œCopy Image Addressâ€�)
 
 		// 2. create a variable of type "Component" that will hold your image
 
@@ -52,7 +53,7 @@ public class PhotoQuiz {
 	}
 
 	private static Component createImage(String imageUrl) throws MalformedURLException {
-		URL url = new URL(imageUrl);
+		URL url = new URL("https://cdn.shopify.com/s/files/1/1017/2183/files/New_stacy_potato_homepage.png?10820781758382157795");
 		Icon icon = new ImageIcon(url);
 		JLabel imageLabel = new JLabel(icon);
 		return imageLabel;
